@@ -1,6 +1,7 @@
 {
   "name": "myproject",
   "version": "0.1.0",
+  "homepage": "https://skyune.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -8,6 +9,9 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.3",
+    "css-loader": "^6.8.1",
+    "jquery": "^3.6.4",
+    "particles.js": "^2.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
     "react-bootstrap-icons": "^1.10.3",
@@ -20,9 +24,14 @@
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "redux": "^4.2.1",
+    "saas": "^1.0.0",
+    "sliderjs": "^2.0.0",
+    "style-loader": "^3.3.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -45,5 +54,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0",
+    "sass": "^1.63.4"
   }
 }
