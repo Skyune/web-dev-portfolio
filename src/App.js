@@ -18,9 +18,8 @@ function App() {
   return (
     <div className="App">
 
-      <ParallaxIlustration/>
-
       <NavBar3 />
+      <ParallaxIlustration/>
       <Skills/>
       <Projects/>
       <Contact />

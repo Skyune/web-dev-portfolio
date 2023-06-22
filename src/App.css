@@ -476,91 +476,93 @@ body {
 
 /************ Skills Css ************/
 
-
 .skill {
   padding: 150px 0px 150px 0;
   position: relative;
   z-index: 1;
-  background: linear-gradient(to bottom, #0a031f, #0a031f);
+  background-color: #130d0a;}
 
-}
 .skill-bx {
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
 }
-.skill h2 {
-	font-size: 45px;
-	font-weight: 700;
-}
 
+.skill h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
 
 p {
-    color: #B8B8B8;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    margin: 14px 0 75px 0;
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px 0 75px 0;
 }
+
 table {
   width: 100%;
   margin: 0 auto;
-  position: relative;
+  table-layout: fixed; /* Fix the table layout */
 }
 
-
-
- button {
-  margin: -2%;
-  margin-bottom: auto;
-}
 .item {
-  position: relative; /* Make the container relative to position the dot image */
-  padding-top: 20%;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin: 0 auto; /* Center the element horizontally */
-
+  height: 200px;
+  margin: 0 auto;
+  overflow: hidden; /* Hide overflowing content */
 }
+
 .item img {
   width: 50%;
   height: auto;
   margin: auto;
   object-fit: cover;
-  max-height: 150px; /* Set the maximum height of the image */
-  transition: transform 0.2s ease-in-out; /* Add a transition on transform property */
+  max-height: 150px;
+  transition: transform 0.2s ease-in-out;
+  margin-top: 15px;
+  margin-bottom: auto;
 }
+
 .item:hover img {
-  transform: scale(1.2); /* Increase the scale on hover */
+  transform: scale(1.2);
+  
 }
+
 .item:hover h5 {
-  transform: scale(1.2); /* Increase the scale on hover */
+  transform: scale(1.2);
 }
+
 .item::after {
-  content: ""; /* Add a new element for the dot image */
-  display: none; /* Set its display to none */
+  content: "";
+  display: none;
   position: absolute;
-  bottom: -40px; /* Position it under the item container */
+  bottom: -40px;
   left: 50%;
   transform: translateX(-50%);
 }
+
 .item:hover::after {
-  display: block; /* Display the dot image on hover */
+  display: block;
 }
+
 .item:hover::after img {
-  width: 20px; /* Set the width of the dot image */
+  width: 20px;
   height: auto;
 }
 
 .item h5 {
-  transition: transform 0.2s ease-in-out; /* Add a transition on transform property */
-
+  transition: transform 0.2s ease-in-out;
   margin-top: 10px;
   font-size: 18px;
   text-align: center;
 }
+
 .dot .circle {
   width: 10px;
   height: 10px;
@@ -569,15 +571,45 @@ table {
   display: inline-block;
   margin-right: 5px;
 }
+
 .item .dot {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   position: absolute;
-  bottom: -20px; /* set the initial position below the item */
+  bottom: -20px;
   left: 50%;
   transform: translateX(-50%);
-  opacity: 0; /* make the dot invisible by default */
-  transition: all 0.2s ease-in-out; 
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.item:hover .dot {
+  bottom: -14%;
+  opacity: 1;
+}
+
+.item:hover h5 {
+  transform: translateY(20%);
+}
+
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 767px) {
+  .skill-bx {
+    padding: 20px 20px; /* Reduce padding on smaller screens */
+  }
+
+  .item {
+    margin-bottom: 0px; /* Reduce margin between items on smaller screens */
+    height: 100px;
+  }
 }
 
 /* apply different colors to the dots */
@@ -651,21 +683,6 @@ table tr td:nth-child(10) .item .dot .circle:nth-child(n+3) {
   background-color: blue;
 }
 
-.item:hover .dot {
-  bottom: -14%; /* move the dot down on hover */
-  opacity: 1; /* make the dot visible on hover */
-}
-
-.item:hover h5 {
-  transform: translateY(20%);
-}
-.background-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
-}
 
 /************ Projects Css ************/
 .contact {

@@ -1,29 +1,20 @@
 .navbar3-navbar {
   padding: 40px 0;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
-    width: 100%;
+  width: 100%;
   z-index: 9999;
-  
-  background-color: #130d0a;
-  transition:  all 0.02s ease-in-out;
+  background-color: transparent;
+
   opacity: 1;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
 nav.navbar3-navbar.scrolled1 {
-  padding: 40px 0;
-  opacity: 1;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  transition:  all 0.02s ease-in-out;
-
   background-color: #130d0a;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 nav.navbar3-navbar a.navbar-brand {
     display: flex;
