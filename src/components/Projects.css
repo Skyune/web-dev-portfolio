@@ -102,6 +102,8 @@
     width: 100%;
   }
 
+
+
   .animate__slideInDown {
     animation-name: slideInDown;
     animation-duration: 1s;
@@ -156,17 +158,13 @@
     width: 30%;
   }
 
-  
-  .android-app .img {
-
-    height: 30%;
-    width: 30%;
+ 
+  .android-app .mobileCard .test {
+    display: flex;
+    height: 100%;
+    width: 100%;
   }
 
-  .android-app .ImageEffect {
-    height: 30%;
-    width: 30%;
-  }
 
 
   .lofiButtons {

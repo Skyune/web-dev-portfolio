@@ -1,17 +1,40 @@
 .parallax-effect-img {
+  position: relative;
   transform-style: preserve-3d;
   transform: perspective(1000px);
   /*background-image: url('./img/background.jpg');*/
   background-size: contain;
   background-repeat: no-repeat;
+  user-select: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  width: 100%;
+
 
   img {
     width: 100%;
     height: auto;
+    image-rendering: optimizeQuality; /* Enable antialiasing */
+    user-select: none;
+    pointer-events: none;
+    
   }
 
+  
   .inner-element {
-    transform: translateZ(40px) scale(0.8);
-    margin-left: 25%;
+    position: absolute;
+    top: 51%;
+    left: 34%;
+    transform: translate(-50%, -50%) translateZ(40px) scale(0.9);
+    width: 70%;
+    user-select: none;
+
+    img {
+      width: 150%; /* Increase the width as desired */
+      height: auto; /* Maintain aspect ratio */
+      image-rendering: optimizeQuality; /* Enable antialiasing */
+      user-select: none;
+
+    }
   }
 }
