@@ -32,7 +32,7 @@ export const Projects = () => {
                 <h2>Projects</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <div class="android-app d-flex justify-content-center align-items-center ">
-                <div className="d-md-block mx-auto mobileCard">
+                <div className="d-md-block ps-md-5 mx-auto mobileCard">
 
   <Card image={background} image2={musicMain} index={0} />
   </div>
@@ -67,7 +67,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      {/*<img className="background-image-right" src={colorSharp2}></img>*/}
      
       </section>
   )

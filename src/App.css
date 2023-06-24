@@ -179,32 +179,40 @@ p.danger {
   animation: upDown 2s ease-in-out infinite;
   animation-delay: 0s;
   position: absolute;
+  user-select: none;
+  pointer-events: none;
 }
 
 .circle2 {
   animation: upDown 2s ease-in-out infinite;
   animation-delay: 0.5s;
   position: absolute;
-
+  user-select: none;
+  pointer-events: none;
 }
 
 .circle3 {
   animation: upDown 2s ease-in-out infinite;
   animation-delay: 1s;
   position: absolute;
-
+  user-select: none;
+  pointer-events: none;
 }
 
 .circle1shadow {
   animation: scaleUpDown 2s ease-in-out infinite;
   animation-delay: 0s;
   position: absolute;
+  user-select: none;
+  pointer-events: none;
 }
 
 .circle2shadow {
   animation: scaleUpDown 2s ease-in-out infinite;
   animation-delay: 0.5s;
   position: absolute;
+  user-select: none;
+  pointer-events: none;
 
 }
 
@@ -212,18 +220,24 @@ p.danger {
   animation: scaleUpDown 2s ease-in-out infinite;
   animation-delay: 1s;
   position: absolute;
+  user-select: none;
+  pointer-events: none;
 }
 
 .decoration {
   position: absolute;
   z-index: 1;
   animation: rotate 4s ease-in-out infinite;
+  user-select: none;
+  pointer-events: none;
 }
 
 .laptopImg {
   animation: upDownLaptop 3s ease-in-out infinite;
   position: "absolute";
   z-index: 1;
+  user-select: none;
+  pointer-events: none;
 }
 
 
@@ -232,7 +246,14 @@ p.danger {
   position: "absolute";
   top: 0;
   left: "-15px";
-  z-Index: 4 
+  z-Index: 4;
+  user-select: none;
+  pointer-events: none;
+}
+
+.AnimatedSvg {
+  user-select: none;
+  pointer-events: none;
 }
 
 @keyframes rotate {
@@ -480,7 +501,8 @@ body {
   padding: 150px 0px 150px 0;
   position: relative;
   z-index: 1;
-  background-color: #130d0a;}
+  background-color: #130d0a;
+}
 
 .skill-bx {
   text-align: center;
