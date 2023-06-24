@@ -26,7 +26,7 @@ export const NavBar3 = () => {
   const [navLinkStyle, setNavLinkStyle] = useState({
     opacity: 1,
     height: '160px',
-    transition: 'all ease',
+   
     backgroundColor: 'transparent'
   });
   const [navLinkPosition, setNavLinkPosition] = useState(0);
@@ -55,7 +55,7 @@ export const NavBar3 = () => {
       setNavLinkStyle({
         opacity: 1,
         height: `${newHeight}px`,
-        transition: 'height ease, background-color 0.3s ease',
+        transition: 'height ease',
 
       });
     };
