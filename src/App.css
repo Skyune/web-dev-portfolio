@@ -17,6 +17,10 @@
 	font-weight: 400;
 }
 
+
+* {
+  --color-primary: #24211d;
+}
 /************ Default Css ************/
 * {
   margin: 0;
@@ -501,7 +505,7 @@ body {
   padding: 150px 0px 150px 0;
   position: relative;
   z-index: 1;
-  background-color: #130d0a;
+  background: var(--color-primary);
 }
 
 .skill-bx {

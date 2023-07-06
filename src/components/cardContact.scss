@@ -1,0 +1,301 @@
+.Contact_contact__Bxtdf {
+  background: var(--color-primary);
+  align-items: flex-start;
+  border: 1px solid var(--font-third);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 85%;
+  justify-content: space-between;
+  left: 40px;
+  padding: 30px 55px 30px 35px;
+  position: fixed;
+  top: var(--top-padding);
+  width: 406px;
+  z-index: 100;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.Contact_subheader__ILrV\+ {
+  color: var(--font-secondary);
+  font-size: 1.6rem;
+}
+.Contact_img {
+    align-self: center;
+    background: var(--color-description);
+    border-radius: 25px;
+    max-width: 350px;
+    transition: background-color .2s ease-in-out;
+    width: 100%;
+}
+.Contact_ctaSection__b11bs {
+  align-items: stretch;
+  flex: 1 1;
+  flex-direction: column;
+  min-width: 300px;
+}
+.Contact_socialIcon__-7qfR {
+  align-items: center;
+  border: 1px solid var(--font-third);
+  border-radius: 50%;
+  color: var(--font-third);
+  cursor: pointer;
+  display: flex;
+  font-size: 4.8rem;
+  height: 50px;
+  justify-content: center;
+  padding: 10px;
+  transition: all .1s ease-in-out;
+  width: 50px;
+}
+.Contact_locationSection__uWJQ9
+{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.Contact_img__dRfo1 {
+  align-self: center;
+  background: var(--color-description);
+  border-radius: 25px;
+  display: none;
+  max-width: 350px;
+  transition: background-color .2s ease-in-out;
+  width: 100%;
+}
+.Contact_buttons {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+.Contact_header__qPZUE {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  gap: 5px;
+}
+.Contact_sectionsContainer__uT59s {
+  align-self: center;
+  display: flex;
+  width: 100%;
+  padding-left: 40px;
+  justify-content: center;
+}
+.Contact_locationIcon__xyA9f {
+  color: var(--font-secondary);
+  display: flex;
+  flex: 1 1;
+  font-size: 4rem;
+  justify-content: center;
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.Contact_textSecondary__0fj4d {
+  color: var(--font-secondary);
+}
+.Contact_infoSection__JMWRI {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.Contact_buttonHire__WaJs5:hover {
+  background: transparent;
+  color: var(--font-secondary);
+  transition: all .1s ease-in-out;
+}
+.Contact_buttonHire__WaJs5 {
+  align-items: center;
+  background: var(--font-secondary);
+  border: 2px solid var(--font-secondary);
+  border-radius: 50px;
+  color: var(--font-tooltip);
+  cursor: pointer;
+  display: flex;
+  font-size: 18px;
+  gap: 20px;
+  justify-content: center;
+  padding: 5px;
+  text-transform: uppercase;
+  transition: all .1s ease-in-out;
+  width: 100%;
+}
+
+.Contact_buttonResume__yxq7I:hover {
+  background: transparent;
+  color: var(--font-secondary);
+  transition: all .1s ease-in-out;
+}
+
+.Contact_buttonResume__yxq7I {
+  align-items: center;
+  background: var(--font-secondary);
+  border: 2px solid var(--font-secondary);
+  border-radius: 50px;
+  color: var(--font-tooltip);
+  cursor: pointer;
+  display: flex;
+  font-size: 18px;
+  gap: 20px;
+  justify-content: center;
+  padding: 5px;
+  text-transform: uppercase;
+  transition: all .1s ease-in-out;
+  width: 100%;
+}
+.Settings_containerDesktop__iJfKe {
+  flex-direction: row;
+  height: 62px;
+  left: 432px;
+  position: fixed;
+  top: 20%;
+  z-index: 400;
+}
+.Settings_container__zkNrZ {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  width: 66px;
+  z-index: 400;
+}
+.Settings_containerDesktop__iJfKe {
+  flex-direction: row;
+  height: 62px;
+  left: 432px;
+  position: fixed;
+  top: 20%;
+  z-index: 4;
+}
+.Settings_container__zkNrZ {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  width: 66px;
+}
+.Contact_contact__Bxtdf {
+  align-items: flex-start;
+  border: 1px solid var(--font-third);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  height: 85%;
+  justify-content: space-between;
+  left: 40px;
+  padding: 30px 55px 30px 35px;
+  position: fixed;
+  top: var(--top-padding);
+  width: 406px;
+  z-index: 100;
+}
+
+
+
+.red {
+  --font-secondary: #f31313;
+  --font-tooltip: #dbdbdb;
+  --color-description: #aa0707;
+  --font-description: #fff;
+  --swiper-navigation-color: #aa0707!important;
+  --swiper-theme-color: #aa0707!important;
+}
+
+.darkmode {
+  --color: 0,0%;
+  --l: 12%;
+  --color-primary: hsl(var(--color), var(--l));
+  --color-primary-darker: hsl(var(--color), calc(var(--l) - 1%));
+  --font-primary: #eaeaea;
+  --font-dimmed: #383838;
+  --swiper-navigation-color: #1dc275!important;
+  --swiper-theme-color: #1dc275!important;
+}
+
+body {
+  background: #fff;
+  background: var(--color-primary);
+  color: #404040;
+  color: var(--font-primary);
+  font-size: 1.6rem;
+  font-size: var(--font-size-base);
+  transition: all 0.1s ease-in-out;
+}
+
+:root {
+  --rt-color-white: #fff;
+  --rt-color-dark: #222;
+  --rt-color-success: #8dc572;
+  --rt-color-error: #be6464;
+  --rt-color-warning: #f0ad4e;
+  --rt-color-info: #337ab7;
+  --rt-opacity: 0.9;
+}
+
+:root {
+  --swiper-navigation-size: 44px;
+}
+
+:root {
+  --swiper-theme-color: #007aff;
+}
+
+:root {
+  --swiper-navigation-color: #fff!important;
+  --swiper-theme-color: #fff!important;
+  --font-family-primary: "Inter", sans-serif;
+  --font-size-base: 1.6rem;
+  --space-between-sections: 4rem;
+  --color: 0,0%;
+  --l: 100%;
+  --color-primary: hsl(var(--color), var(--l));
+  --color-primary-darker: hsl(var(--color), calc(var(--l) - 10%));
+  --color-secondary: #1dc275;
+  --color-description: #0b9052;
+  --font-primary: #404040;
+  --font-secondary: #1dc275;
+  --font-third: #727272;
+  --font-tooltip: #4b4b4b;
+  --font-dimmed: #c9c9c9;
+  --top-padding: 50px;
+  --spacing-xxl: 100px;
+  --spacing-xl: 80px;
+  --spacing-l: 50px;
+  --spacing-m: 30px;
+  --spacing-s: 20px;
+  --spacing-xs: 10px;
+  --mobile-l: 500px;
+  --tablet-portrait: 768px;
+  --tablet: 1024px;
+  --desktop-s: 1200px;
+  --desktop: 1366px;
+  box-sizing: border-box;
+  display: block;
+}
+
+html {
+  background: #1f1f1f;
+  font-size: 62.5%;
+}
