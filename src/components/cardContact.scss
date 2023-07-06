@@ -1,50 +1,97 @@
-.Contact_contact__Bxtdf {
+.Contact_footer {
+  align-self: center;
+  color: var(--font-third);
+  font-size: 1.4rem;
+}
+
+.ColorSelect_colorButton {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 30px;
+  position: relative;
+  width: 30px;
+}
+
+
+.Settings_settingsContainer {
   background: var(--color-primary);
-  align-items: flex-start;
-  border: 1px solid var(--font-third);
+  top: 19.3%;
+  left: 430px;
+  position: absolute;
+  padding: 15px;
   border-radius: 50px;
+  gap:35px;
+}
+
+
+.ColorSelect_orange {
+  background: #f57722;
+}
+
+.ColorSelect_yellow {
+  background: #f8dc6c;
+}
+
+.ColorSelect_blue {
+  background: #3498db;
+}
+
+.ColorSelect_red {
+  background: #e74c3c;
+}
+
+.ColorSelect_purple {
+  background: #9b59b6;
+}
+
+.ColorSelect_green {
+  background: #27ae60;
+}
+
+.ColorSelect_pink {
+  background: #e91e63;
+}
+
+
+
+.ColorSelect_colorSelect{
   display: flex;
-  flex-direction: column;
-  gap: 30px;
-  height: 85%;
-  justify-content: space-between;
-  left: 40px;
-  padding: 30px 55px 30px 35px;
-  position: fixed;
-  top: var(--top-padding);
-  width: 406px;
-  z-index: 100;
+  flex-direction: row;
+  gap: 15px;
 }
 
 h2 {
   display: block;
   font-size: 1.5em;
   margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
-.Contact_subheader__ILrV\+ {
+.Contact_subheader {
+  padding-top: 0;
   color: var(--font-secondary);
   font-size: 1.6rem;
 }
 .Contact_img {
-    align-self: center;
-    background: var(--color-description);
-    border-radius: 25px;
-    max-width: 350px;
-    transition: background-color .2s ease-in-out;
-    width: 100%;
+  align-self: center;
+  background: var(--color-description);
+  border-radius: 25px;
+  max-width: 350px;
+  transition: background-color .2s ease-in-out;
+  width: 100%;
 }
-.Contact_ctaSection__b11bs {
+.Contact_ctaSection {
   align-items: stretch;
   flex: 1 1;
   flex-direction: column;
   min-width: 300px;
 }
-.Contact_socialIcon__-7qfR {
+.Contact_socialIcon {
   align-items: center;
   border: 1px solid var(--font-third);
   border-radius: 50%;
@@ -58,48 +105,52 @@ h2 {
   transition: all .1s ease-in-out;
   width: 50px;
 }
-.Contact_locationSection__uWJQ9
+.Contact_locationSection
 {
   display: flex;
   flex-direction: column;
   gap: 20px;
   width: 100%;
 }
-.Contact_img__dRfo1 {
-  align-self: center;
-  background: var(--color-description);
-  border-radius: 25px;
-  display: none;
-  max-width: 350px;
-  transition: background-color .2s ease-in-out;
-  width: 100%;
-}
+
 .Contact_buttons {
   align-self: center;
   display: flex;
   flex-direction: column;
   width: 100%;
-
+  
   p {
     margin: 0;
     padding: 0;
   }
+  button {
+    height: 55px; 
+    align-self: stretch; 
+  }
 }
-.Contact_header__qPZUE {
+
+.Contact_header {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
   font-size: 2rem;
   gap: 5px;
 }
-.Contact_sectionsContainer__uT59s {
+.Contact_sectionsContainer {
+  margin-top: 20px;
   align-self: center;
   display: flex;
   width: 100%;
   padding-left: 40px;
   justify-content: center;
 }
-.Contact_locationIcon__xyA9f {
+.Contact_infoContainer {
+  align-self: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.Contact_locationIcon{
   color: var(--font-secondary);
   display: flex;
   flex: 1 1;
@@ -108,20 +159,24 @@ h2 {
   -webkit-transform: rotate(270deg);
   transform: rotate(270deg);
 }
-.Contact_textSecondary__0fj4d {
+.Contact_textSecondary {
   color: var(--font-secondary);
 }
-.Contact_infoSection__JMWRI {
+.Contact_infoSection {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-.Contact_buttonHire__WaJs5:hover {
+.Contact_buttonHire:hover {
   background: transparent;
   color: var(--font-secondary);
   transition: all .1s ease-in-out;
 }
-.Contact_buttonHire__WaJs5 {
+.Contact_buttonHire {
   align-items: center;
   background: var(--font-secondary);
   border: 2px solid var(--font-secondary);
@@ -133,24 +188,26 @@ h2 {
   gap: 20px;
   justify-content: center;
   padding: 5px;
+  margin-bottom: 10px;
   text-transform: uppercase;
   transition: all .1s ease-in-out;
   width: 100%;
 }
 
-.Contact_buttonResume__yxq7I:hover {
+.Contact_buttonResume:hover {
   background: transparent;
   color: var(--font-secondary);
   transition: all .1s ease-in-out;
 }
 
-.Contact_buttonResume__yxq7I {
+.Contact_buttonResume {
   align-items: center;
   background: var(--font-secondary);
   border: 2px solid var(--font-secondary);
   border-radius: 50px;
   color: var(--font-tooltip);
   cursor: pointer;
+  margin-bottom: 10px;
   display: flex;
   font-size: 18px;
   gap: 20px;
@@ -159,8 +216,9 @@ h2 {
   text-transform: uppercase;
   transition: all .1s ease-in-out;
   width: 100%;
+
 }
-.Settings_containerDesktop__iJfKe {
+.Settings_containerDesktop {
   flex-direction: row;
   height: 62px;
   left: 432px;
@@ -168,25 +226,8 @@ h2 {
   top: 20%;
   z-index: 400;
 }
-.Settings_container__zkNrZ {
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  position: relative;
-  width: 66px;
-  z-index: 400;
-}
-.Settings_containerDesktop__iJfKe {
-  flex-direction: row;
-  height: 62px;
-  left: 432px;
-  position: fixed;
-  top: 20%;
-  z-index: 4;
-}
-.Settings_container__zkNrZ {
+
+.Settings_container{
   align-items: center;
   cursor: pointer;
   display: flex;
@@ -195,17 +236,17 @@ h2 {
   position: relative;
   width: 66px;
 }
-.Contact_contact__Bxtdf {
+.Contact_contact {
+  background: var(--color-primary);
   align-items: flex-start;
   border: 1px solid var(--font-third);
   border-radius: 50px;
   display: flex;
   flex-direction: column;
-  gap: 28px;
   height: 85%;
   justify-content: space-between;
   left: 40px;
-  padding: 30px 55px 30px 35px;
+  padding: 10px 55px 30px 35px;
   position: fixed;
   top: var(--top-padding);
   width: 406px;
@@ -214,13 +255,70 @@ h2 {
 
 
 
+.orange {
+  --font-secondary: #ff8c00;
+  --font-tooltip: #dbdbdb;
+  --color-description: #ff8c00;
+  --font-description: #fff;
+  --swiper-navigation-color: #ff8c00!important;
+  --swiper-theme-color: #ff8c00!important;
+}
+
+.yellow {
+  --font-secondary: #ffd700;
+  --font-tooltip: #dbdbdb;
+  --color-description: #ffd700;
+  --font-description: #fff;
+  --swiper-navigation-color: #ffd700!important;
+  --swiper-theme-color: #ffd700!important;
+}
+
+
+.blue {
+  --font-secondary: #0066cc;
+  --font-tooltip: #dbdbdb;
+  --color-description: #0066cc;
+  --font-description: #fff;
+  --swiper-navigation-color: #0066cc!important;
+  --swiper-theme-color: #0066cc!important;
+}
+
 .red {
   --font-secondary: #f31313;
   --font-tooltip: #dbdbdb;
-  --color-description: #aa0707;
+  --color-description: #f31313;
   --font-description: #fff;
-  --swiper-navigation-color: #aa0707!important;
-  --swiper-theme-color: #aa0707!important;
+  --swiper-navigation-color: #f31313!important;
+  --swiper-theme-color: #f31313!important;
+}
+
+.purple {
+  --font-secondary: #9c27b0;
+  --font-tooltip: #dbdbdb;
+  --color-description: #9c27b0;
+  --font-description: #fff;
+  --swiper-navigation-color: #9c27b0!important;
+  --swiper-theme-color: #9c27b0!important;
+}
+
+
+.green {
+  --font-secondary: #1dc275;
+  --font-tooltip: #dbdbdb;
+  --color-description: #1dc275;
+  --font-description: #fff;
+  --swiper-navigation-color: #1dc275!important;
+  --swiper-theme-color: #1dc275!important;
+}
+
+
+.pink {
+  --font-secondary: #ff69b4;
+  --font-tooltip: #dbdbdb;
+  --color-description: #ff69b4;
+  --font-description: #fff;
+  --swiper-navigation-color: #ff69b4!important;
+  --swiper-theme-color: #ff69b4!important;
 }
 
 .darkmode {

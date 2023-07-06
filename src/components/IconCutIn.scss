@@ -24,14 +24,7 @@
   transform: translateY(-50%);
   z-index: 2;
 }
-* {
-  box-sizing: border-box;
-  font-family: Inter,sans-serif;
-  font-family: var(--font-family-primary);
-  margin: 0;
-  padding-top: 0;
-  scroll-behavior: smooth;
-}
+
 
 .SettingIcon:after, .SettingIcon:before {
   background: var(--color-primary);
@@ -82,6 +75,22 @@
   width: 25px;
 }
 
+.RotatingIcon {
+  animation: rotate 10s linear infinite; /* Adjust the duration and timing function as needed */
+  will-change: transform;
+  transform-origin: center;
+  transform-box: fill-box;
+  shape-rendering: auto;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 
 .VerticalNavbar_links {

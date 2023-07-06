@@ -7,28 +7,31 @@ import { AnimatedSvg } from "./AnimatedSvg";
 import VerticalNav from "./VerticalNav";
 import SettingsIcon from "./IconCutIn";
 import ProfileImg from "../assets/img/progile.webp";
+import SettingsContainer from "./SettingsContainer";
 
 
 export const CardContact = () => {
   return (
-    <div id="contact" className="Contact_contact__Bxtdf ">
+    <div id="contact" className="Contact_contact">
+                <SettingsContainer/>
+
       
-      <div className="Contact_header__qPZUE" style={{ opacity: 1, transform: 'none' }}>
+      <div className="Contact_header" style={{ opacity: 1, transform: 'none' }}>
         <h2 style={{ opacity: 1, transform: 'none' }}>Krystian Hołyszko</h2>
-        <p className="Contact_subheader__ILrV+" style={{ opacity: 1, transform: 'none' }}>Junior web developer</p>
+        <p className="Contact_subheader" style={{ opacity: 1, transform: 'none' }}>Junior web developer</p>
       </div>
       <img className="Contact_img" src={ProfileImg} alt="profile_bg" style={{ opacity: 1 }} />
       <div className="Contact_buttons">
-      <div className="Contact_infoContainer__zDvY1" style={{ opacity: 1, transform: 'none' }}>
-        <div className="Contact_sectionsContainer__uT59s">
+      <div className="Contact_infoContainer" style={{ opacity: 1, transform: 'none' }}>
+        <div className="Contact_sectionsContainer">
  
             <div>
               <p>Lokalizacja: Poznań</p>
-              <p className="Contact_textSecondary__0fj4d">z możliwością relokacji</p>
+              <p className="Contact_textSecondary">z możliwością relokacji</p>
             </div>
          
             
-            <div className="Contact_locationIcon__xyA9f">
+            <div className="Contact_locationIcon">
               <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                 <g>
                   <path fill="none" d="M0 0h24v24H0z"></path>
@@ -37,13 +40,12 @@ export const CardContact = () => {
               </svg>
             </div>
           </div>
-
-            <SettingsIcon />
+            <SettingsIcon rotate={true}/>
             <SettingsIcon  top="75%"/>
             <VerticalNav/>
             
-          <div className="Contact_infoSection__JMWRI" style={{ opacity: 1, transform: 'none' }}>
-            <a className="Contact_socialIcon__-7qfR" href="https://bit.ly/3P6vzpt" target="_blank" rel="noreferrer">
+          <div className="Contact_infoSection" style={{ opacity: 1, transform: 'none' }}>
+            <a className="Contact_socialIcon" href="https://bit.ly/3P6vzpt" target="_blank" rel="noreferrer">
               <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                 <g>
                   <path fill="none" d="M0 0h24v24H0z"></path>
@@ -51,7 +53,7 @@ export const CardContact = () => {
                 </g>
               </svg>
             </a>
-            <a className="Contact_socialIcon__-7qfR" href="https://bit.ly/3FpbAxS" target="_blank" rel="noreferrer">
+            <a className="Contact_socialIcon" href="https://bit.ly/3FpbAxS" target="_blank" rel="noreferrer">
               <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                 <g>
                   <path fill="none" d="M0 0h24v24H0z"></path>
@@ -59,7 +61,7 @@ export const CardContact = () => {
                 </g>
               </svg>
             </a>
-            <a className="Contact_socialIcon__-7qfR" href="https://bit.ly/3wd0F6n" target="_blank" rel="noreferrer">
+            <a className="Contact_socialIcon" href="https://bit.ly/3wd0F6n" target="_blank" rel="noreferrer">
               <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                 <g>
                   <path fill="none" d="M0 0h24v24H0z"></path>
@@ -68,11 +70,11 @@ export const CardContact = () => {
               </svg>
             </a>
           </div>
-          <div className="Contact_locationSection__uWJQ9" style={{ opacity: 1, transform: 'none' }}>
-                  <div className="Contact_buttonResume__yxq7I" style={{ opacity: 1 }}>
-        <div className="Contact_buttonDownload__OYV7y">Pobierz CV</div>
-      </div>
-      <button className="Contact_buttonHire__WaJs5" style={{ opacity: 1 }}>
+          <div className="Contact_locationSection" style={{ opacity: 1, transform: 'none' }}>
+                  <button className="Contact_buttonResume" style={{ opacity: 1 }}>
+        <div className="Contact_buttonDownload">Pobierz CV</div>
+      </button>
+      <button className="Contact_buttonHire" style={{ opacity: 1 }}>
         <svg
           stroke="currentColor"
           fill="currentColor"
@@ -86,7 +88,11 @@ export const CardContact = () => {
         </svg>
         Zadaj mi pytanie!
       </button>
+      <div className="Contact_footer" style={{ opacity: 1, transform: 'none' }}>
+      © 2023 Michał Stępień
+</div>
       </div>
+
         </div>
       </div>
       </div>

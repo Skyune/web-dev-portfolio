@@ -502,7 +502,8 @@ body {
 /************ Skills Css ************/
 
 .skill {
-  padding: 150px 0px 150px 0;
+  padding: 150px 0px 250px 0;
+  margin-left: 450px;
   position: relative;
   z-index: 1;
   background: var(--color-primary);
