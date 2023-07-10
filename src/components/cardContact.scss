@@ -8,22 +8,48 @@
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  height: 30px;
+  height: 30px !important;
   position: relative;
-  width: 30px;
+  width: 30px !important;
 }
-
 
 .Settings_settingsContainer {
   background: var(--color-primary);
-  top: 19.3%;
-  left: 430px;
+  left: 490px;
   position: absolute;
+  position: fixed;
+  top: 25%;
+  transform: translateY(-50%);
   padding: 15px;
   border-radius: 50px;
-  gap:35px;
+  gap: 35px;
+  transition: all 0.3s ease;
+
+  &.hidden {
+    opacity: 0;
+    left: 470px;
+  }
 }
 
+.ColorSelect_colorSelect {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  transition: all 0.3s ease;
+  opacity: 0;
+  opacity: 1;
+  transform: translateX(0%);
+
+  transition-delay: 0.2s;
+
+  &.hidden {
+    opacity: 0;
+    transition: all 0.3s ease;
+    transform: translateX(-4%);
+
+  }
+
+}
 
 .ColorSelect_orange {
   background: #f57722;
@@ -55,12 +81,6 @@
 
 
 
-.ColorSelect_colorSelect{
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-}
-
 h2 {
   display: block;
   font-size: 1.5em;
@@ -82,8 +102,16 @@ h2 {
   background: var(--color-description);
   border-radius: 25px;
   max-width: 350px;
-  transition: background-color .2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
   width: 100%;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  @media (max-height: 1600px) {
+    display: none;
+  }
 }
 .Contact_ctaSection {
   align-items: stretch;
@@ -102,11 +130,10 @@ h2 {
   height: 50px;
   justify-content: center;
   padding: 10px;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   width: 50px;
 }
-.Contact_locationSection
-{
+.Contact_locationSection {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -118,15 +145,17 @@ h2 {
   display: flex;
   flex-direction: column;
   width: 100%;
-  
+
   p {
     margin: 0;
     padding: 0;
   }
+  .Contact_locationSection {
   button {
-    height: 55px; 
-    align-self: stretch; 
+    height: 55px;
+    align-self: stretch;
   }
+}
 }
 
 .Contact_header {
@@ -150,7 +179,7 @@ h2 {
   flex-wrap: wrap;
   gap: 15px;
 }
-.Contact_locationIcon{
+.Contact_locationIcon {
   color: var(--font-secondary);
   display: flex;
   flex: 1 1;
@@ -174,7 +203,7 @@ h2 {
 .Contact_buttonHire:hover {
   background: transparent;
   color: var(--font-secondary);
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 .Contact_buttonHire {
   align-items: center;
@@ -190,14 +219,14 @@ h2 {
   padding: 5px;
   margin-bottom: 10px;
   text-transform: uppercase;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   width: 100%;
 }
 
 .Contact_buttonResume:hover {
   background: transparent;
   color: var(--font-secondary);
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .Contact_buttonResume {
@@ -214,9 +243,8 @@ h2 {
   justify-content: center;
   padding: 5px;
   text-transform: uppercase;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   width: 100%;
-
 }
 .Settings_containerDesktop {
   flex-direction: row;
@@ -227,7 +255,7 @@ h2 {
   z-index: 400;
 }
 
-.Settings_container{
+.Settings_container {
   align-items: center;
   cursor: pointer;
   display: flex;
@@ -253,15 +281,13 @@ h2 {
   z-index: 100;
 }
 
-
-
 .orange {
   --font-secondary: #ff8c00;
   --font-tooltip: #dbdbdb;
   --color-description: #ff8c00;
   --font-description: #fff;
-  --swiper-navigation-color: #ff8c00!important;
-  --swiper-theme-color: #ff8c00!important;
+  --swiper-navigation-color: #ff8c00 !important;
+  --swiper-theme-color: #ff8c00 !important;
 }
 
 .yellow {
@@ -269,18 +295,17 @@ h2 {
   --font-tooltip: #dbdbdb;
   --color-description: #ffd700;
   --font-description: #fff;
-  --swiper-navigation-color: #ffd700!important;
-  --swiper-theme-color: #ffd700!important;
+  --swiper-navigation-color: #ffd700 !important;
+  --swiper-theme-color: #ffd700 !important;
 }
-
 
 .blue {
   --font-secondary: #0066cc;
   --font-tooltip: #dbdbdb;
   --color-description: #0066cc;
   --font-description: #fff;
-  --swiper-navigation-color: #0066cc!important;
-  --swiper-theme-color: #0066cc!important;
+  --swiper-navigation-color: #0066cc !important;
+  --swiper-theme-color: #0066cc !important;
 }
 
 .red {
@@ -288,8 +313,8 @@ h2 {
   --font-tooltip: #dbdbdb;
   --color-description: #f31313;
   --font-description: #fff;
-  --swiper-navigation-color: #f31313!important;
-  --swiper-theme-color: #f31313!important;
+  --swiper-navigation-color: #f31313 !important;
+  --swiper-theme-color: #f31313 !important;
 }
 
 .purple {
@@ -297,39 +322,37 @@ h2 {
   --font-tooltip: #dbdbdb;
   --color-description: #9c27b0;
   --font-description: #fff;
-  --swiper-navigation-color: #9c27b0!important;
-  --swiper-theme-color: #9c27b0!important;
+  --swiper-navigation-color: #9c27b0 !important;
+  --swiper-theme-color: #9c27b0 !important;
 }
-
 
 .green {
   --font-secondary: #1dc275;
   --font-tooltip: #dbdbdb;
   --color-description: #1dc275;
   --font-description: #fff;
-  --swiper-navigation-color: #1dc275!important;
-  --swiper-theme-color: #1dc275!important;
+  --swiper-navigation-color: #1dc275 !important;
+  --swiper-theme-color: #1dc275 !important;
 }
-
 
 .pink {
   --font-secondary: #ff69b4;
   --font-tooltip: #dbdbdb;
   --color-description: #ff69b4;
   --font-description: #fff;
-  --swiper-navigation-color: #ff69b4!important;
-  --swiper-theme-color: #ff69b4!important;
+  --swiper-navigation-color: #ff69b4 !important;
+  --swiper-theme-color: #ff69b4 !important;
 }
 
 .darkmode {
-  --color: 0,0%;
+  --color: 0, 0%;
   --l: 12%;
   --color-primary: hsl(var(--color), var(--l));
   --color-primary-darker: hsl(var(--color), calc(var(--l) - 1%));
   --font-primary: #eaeaea;
   --font-dimmed: #383838;
-  --swiper-navigation-color: #1dc275!important;
-  --swiper-theme-color: #1dc275!important;
+  --swiper-navigation-color: #1dc275 !important;
+  --swiper-theme-color: #1dc275 !important;
 }
 
 body {
@@ -361,12 +384,12 @@ body {
 }
 
 :root {
-  --swiper-navigation-color: #fff!important;
-  --swiper-theme-color: #fff!important;
+  --swiper-navigation-color: #fff !important;
+  --swiper-theme-color: #fff !important;
   --font-family-primary: "Inter", sans-serif;
   --font-size-base: 1.6rem;
   --space-between-sections: 4rem;
-  --color: 0,0%;
+  --color: 0, 0%;
   --l: 100%;
   --color-primary: hsl(var(--color), var(--l));
   --color-primary-darker: hsl(var(--color), calc(var(--l) - 10%));
