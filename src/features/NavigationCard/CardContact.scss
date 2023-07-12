@@ -279,6 +279,7 @@ h2 {
   top: var(--top-padding);
   width: 406px;
   z-index: 100;
+  order: 1; /* Add this line to specify the order */
 }
 
 .orange {

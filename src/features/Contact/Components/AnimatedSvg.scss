@@ -1,0 +1,144 @@
+
+
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(0.98);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+@keyframes upDownLaptop {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes scaleUpDown {
+  0% {
+    transform: scale(1)
+  }
+  50% {
+    transform: scale(0.98)
+  }
+  100% {
+    transform: scale(1)
+  }
+}
+
+@keyframes scaleUpDownLaptop {
+  0% {
+    transform: scale(1)
+  }
+  50% {
+    transform: scale(0.99)
+  }
+  100% {
+    transform: scale(1)
+  }
+}
+
+.circle1 {
+  animation: upDown 2s ease-in-out infinite;
+  animation-delay: 0s;
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+}
+
+.circle2 {
+  animation: upDown 2s ease-in-out infinite;
+  animation-delay: 0.5s;
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+}
+
+.circle3 {
+  animation: upDown 2s ease-in-out infinite;
+  animation-delay: 1s;
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+}
+
+.circle1shadow {
+  animation: scaleUpDown 2s ease-in-out infinite;
+  animation-delay: 0s;
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+}
+
+.circle2shadow {
+  animation: scaleUpDown 2s ease-in-out infinite;
+  animation-delay: 0.5s;
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+
+}
+
+.circle3shadow {
+  animation: scaleUpDown 2s ease-in-out infinite;
+  animation-delay: 1s;
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+}
+
+.decoration {
+  position: absolute;
+  z-index: 1;
+  animation: rotate 4s ease-in-out infinite;
+  user-select: none;
+  pointer-events: none;
+}
+
+.laptopImg {
+  animation: upDownLaptop 3s ease-in-out infinite;
+  position: "absolute";
+  z-index: 1;
+  user-select: none;
+  pointer-events: none;
+}
+
+
+.laptopShadow {
+  animation: scaleUpDownLaptop 3s ease-in-out infinite;
+  position: "absolute";
+  top: 0;
+  left: "-15px";
+  z-Index: 4;
+  user-select: none;
+  pointer-events: none;
+}
+
+.AnimatedSvg {
+  user-select: none;
+  pointer-events: none;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+  50% {
+    transform: rotate(1deg) scale(0.99);
+  }
+  100% {
+    transform: rotate(0) scale(1);
+  }
+}

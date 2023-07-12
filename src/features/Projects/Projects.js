@@ -1,18 +1,17 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
-import './Projects.css'
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import musicMain from "../assets/img/MainMusic2.png";
-import background from "../assets/img/backgroundMusic.png"
-import musicSecond from "../assets/img/secondMusic2.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
-import googleBadge from "../assets/img/googleplay.png";
-import queen from "../assets/img/queen.png";
+import './Projects.scss'
+import projImg1 from "../../assets/img/project-img1.png";
+import projImg2 from "../../assets/img/project-img2.png";
+import projImg3 from "../../assets/img/project-img3.png";
+import musicMain from "../../assets/img/MainMusic2.png";
+import background from "../../assets/img/backgroundMusic.png"
+import musicSecond from "../../assets/img/secondMusic2.png";
+import colorSharp2 from "../../assets/img/color-sharp2.png";
+import googleBadge from "../../assets/img/googleplay.png";
+import queen from "../../assets/img/queen.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import  Card  from './Card';
+import  Card  from './Components/Card';
 
 export const Projects = () => {
 

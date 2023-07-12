@@ -1,13 +1,11 @@
 import { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../assets/img/contact-img.svg";
-import "./cardContact.scss";
-import TrackVisibility from "react-on-screen";
-import { AnimatedSvg } from "./AnimatedSvg";
-import VerticalNav from "./VerticalNav";
-import SettingsIcon from "./IconCutIn";
-import ProfileImg from "../assets/img/progile.webp";
-import SettingsContainer from "./SettingsContainer";
+import SettingsContainer from "./components/SettingsContainer";
+import LanguageButton from "./components/SettingsContainer";
+import VerticalNav from "./components/VerticalNav";
+import SettingsIcon from "./components/SettingsIcon";
+import ProfileImg from "../../assets/img/progile.webp";
+
+import "./CardContact.scss";
 
 export const CardContact = () => {
   const [hidden, setHidden] = useState(false);
@@ -59,7 +57,7 @@ export const CardContact = () => {
           </div>
           <SettingsIcon rotate={true} onClick={() => setHidden(!hidden)} />
       <SettingsContainer hidden={hidden} setHidden={setHidden} />
-          <SettingsIcon top="75%"></SettingsIcon>
+          <LanguageButton top="75%"></LanguageButton>
           <VerticalNav />
 
           <div

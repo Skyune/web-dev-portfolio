@@ -1,29 +1,26 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-import { NavBar3 } from "./components/NavBar3";
-import { Skills } from "./components/Skills";
-import { Projects } from "./components/Projects";
-import { Contact } from "./components/Contact";
-import { Footer } from "./components/Footer";
-import { ParallaxIlustration } from "./components/ParallaxIlustration.tsx";
-import CardContact  from "./components/CardContact";
+import { Skills } from "./features/Skills/Skills";
+import { Projects } from "./features/Projects/Projects";
+import { Contact } from "./features/Contact/Contact";
+import { Footer } from "./features/Footer/Footer";
+import CardContact  from "./features/NavigationCard/CardContact";
 
 function App() {
-
-  
   return (
     <div className="App">
-      <CardContact />
-
-     {/*  <NavBar3 />
-     <ParallaxIlustration/>*/}
-      <Skills/>
-      <Projects/>
-      <Contact />
-      <Footer />
+      <div className="left-section">
+        <CardContact />
+      </div>
+      <div className="right-section">
+        <Skills/>
+        <Projects/>
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }

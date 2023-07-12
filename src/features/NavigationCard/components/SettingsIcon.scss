@@ -23,6 +23,17 @@
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 2;
+
+  svg {
+    margin-bottom: 2.3%;
+    scale: 1.13;
+    color: var(--font-third);
+    transition: color 0.3s ease-in-out;
+  }
+
+  &:hover svg {
+    color: var(--font-secondary);
+  }
 }
 
 

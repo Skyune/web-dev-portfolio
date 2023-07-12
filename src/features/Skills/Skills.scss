@@ -1,0 +1,210 @@
+
+.skill {
+	padding: 20px 0px 250px 0;
+	position: relative;
+	z-index: 1;
+	
+	background: var(--color-primary);
+  }
+  
+  .skill-bx {
+	text-align: center;
+	padding: 60px 50px;
+	margin-top: -60px;
+  }
+  
+  .skill h2 {
+	font-size: 45px;
+	font-weight: 700;
+  }
+  
+  p {
+	color: #B8B8B8;
+	font-size: 18px;
+	letter-spacing: 0.8px;
+	line-height: 1.5em;
+	margin: 14px 0 75px 0;
+  }
+  
+  table {
+	width: 100%;
+	margin: 0 auto;
+	table-layout: fixed; /* Fix the table layout */
+  }
+  
+  .item {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 200px;
+	margin: 0 auto;
+	overflow: hidden; /* Hide overflowing content */
+  }
+  
+  .item img {
+	width: 50%;
+	height: auto;
+	margin: auto;
+	object-fit: cover;
+	max-height: 150px;
+	transition: transform 0.2s ease-in-out;
+	margin-top: 15px;
+	margin-bottom: auto;
+  }
+  
+  .item:hover img {
+	transform: scale(1.2);
+	
+  }
+  
+  .item:hover h5 {
+	transform: scale(1.2);
+  }
+  
+  .item::after {
+	content: "";
+	display: none;
+	position: absolute;
+	bottom: -40px;
+	left: 50%;
+	transform: translateX(-50%);
+  }
+  
+  .item:hover::after {
+	display: block;
+  }
+  
+  .item:hover::after img {
+	width: 20px;
+	height: auto;
+  }
+  
+  .item h5 {
+	transition: transform 0.2s ease-in-out;
+	margin-top: 10px;
+	font-size: 18px;
+	text-align: center;
+  }
+  
+  .dot .circle {
+	width: 10px;
+	height: 10px;
+	background-color: #000;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 5px;
+  }
+  
+  .item .dot {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+  }
+  
+  .item:hover .dot {
+	bottom: -14%;
+	opacity: 1;
+  }
+  
+  .item:hover h5 {
+	transform: translateY(20%);
+  }
+  
+  .background-image-left {
+	top: 28%;
+	position: absolute;
+	bottom: 0;
+	width: 40%;
+	z-index: -4;
+  }
+  
+  /* Adjustments for smaller screens */
+  @media (max-width: 767px) {
+	.skill-bx {
+	  padding: 20px 20px; /* Reduce padding on smaller screens */
+	}
+  
+	.item {
+	  margin-bottom: 0px; /* Reduce margin between items on smaller screens */
+	  height: 100px;
+	}
+  }
+  
+  /* apply different colors to the dots */
+  table tr td:nth-child(1) .item .dot .circle:nth-child(-n+3) {
+	background-color: red;
+  }
+  table tr td:nth-child(1) .item .dot .circle:nth-child(n+4) {
+	background-color: blue;
+  }
+  
+  table tr td:nth-child(2) .item .dot .circle:nth-child(-n+2) {
+	background-color: red;
+  }
+  table tr td:nth-child(2) .item .dot .circle:nth-child(n+3) {
+	background-color: blue;
+  }
+  
+  table tr td:nth-child(3) .item .dot .circle:nth-child(-n+2) {
+	background-color: red;
+  }
+  table tr td:nth-child(3) .item .dot .circle:nth-child(n+3) {
+	background-color: blue;
+  }
+  
+  table tr td:nth-child(4) .item .dot .circle:nth-child(-n+2) {
+	background-color: red;
+  }
+  table tr td:nth-child(4) .item .dot .circle:nth-child(n+3) {
+	background-color: blue;
+  }
+  
+  table tr td:nth-child(5) .item .dot .circle:nth-child(-n+2) {
+	background-color: red;
+  }
+  table tr td:nth-child(5) .item .dot .circle:nth-child(n+3) {
+	background-color: blue;
+  }
+  
+  table tr td:nth-child(6) .item .dot .circle:nth-child(-n+2) {
+	background-color: red;
+  }
+  table tr td:nth-child(6) .item .dot .circle:nth-child(n+3) {
+	background-color: blue;
+  }
+  
+  table tr td:nth-child(7) .item .dot .circle:nth-child(-n+2) {
+	background-color: red;
+  }
+  table tr td:nth-child(7) .item .dot .circle:nth-child(n+3) {
+	background-color: blue;
+  }
+  
+  table tr td:nth-child(8) .item .dot .circle:nth-child(-n+2) {
+	background-color: red;
+  }
+  table tr td:nth-child(8) .item .dot .circle:nth-child(n+3) {
+	background-color: blue;
+  }
+  
+  table tr td:nth-child(9) .item .dot .circle:nth-child(-n+2) {
+	background-color: red;
+  }
+  table tr td:nth-child(9) .item .dot .circle:nth-child(n+3) {
+	background-color: blue;
+  }
+  
+  table tr td:nth-child(10) .item .dot .circle:nth-child(-n+2) {
+	background-color: red;
+  }
+  table tr td:nth-child(10) .item .dot .circle:nth-child(n+3) {
+	background-color: blue;
+  }
+  

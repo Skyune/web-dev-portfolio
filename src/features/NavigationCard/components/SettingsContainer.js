@@ -1,12 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../assets/img/contact-img.svg";
-import "./cardContact.scss";
-import TrackVisibility from "react-on-screen";
-import { AnimatedSvg } from "./AnimatedSvg";
-import VerticalNav from "./VerticalNav";
-import SettingsIcon from "./IconCutIn";
-import ProfileImg from "../assets/img/progile.webp";
+import "../CardContact.scss";
 
 const SettingsContainer = ({ hidden }) => {
   const [selectedTheme, setSelectedTheme] = useState("");

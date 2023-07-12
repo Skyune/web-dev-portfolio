@@ -1,12 +1,13 @@
-import headerImg from "../assets/img/laptop.svg";
-import decorationImg from "../assets/img/decoration.svg";
-import laptopshadow from "../assets/img/laptopshadow.svg";
-import circle1 from "../assets/img/circle1.svg";
-import circle2 from "../assets/img/circle2.svg";
-import circle3 from "../assets/img/circle3.svg";
-import circle1shadow from "../assets/img/circle1shadow.svg";
-import circle2shadow from "../assets/img/circle2shadow.svg";
-import circle3shadow from "../assets/img/circle3shadow.svg";
+import headerImg from "../../../assets/img/laptop.svg";
+import decorationImg from "../../../assets/img/decoration.svg";
+import laptopshadow from "../../../assets/img/laptopshadow.svg";
+import circle1 from "../../../assets/img/circle1.svg";
+import circle2 from "../../../assets/img/circle2.svg";
+import circle3 from "../../../assets/img/circle3.svg";
+import circle1shadow from "../../../assets/img/circle1shadow.svg";
+import circle2shadow from "../../../assets/img/circle2shadow.svg";
+import circle3shadow from "../../../assets/img/circle3shadow.svg";
+import "./AnimatedSvg.scss";
 
 export const AnimatedSvg = () => {
     return (

@@ -1,18 +1,17 @@
-import meter1 from "../assets/img/meter1.svg";
-import Kotlin from "../assets/img/Kotlin_Icon.svg";
-import React from "../assets/img/React-icon.svg";
-import CSharp from "../assets/img/csharp_Icon.svg";
-import Java from "../assets/img/Java_icon.svg";
-import Redux from "../assets/img/redux.svg";
-import Three from "../assets/img/Threejs-logo.svg"
-import Cpp from "../assets/img/cplusplus.svg";
-import Vue from "../assets/img/Vue_Icon.svg";
-import JavaScript from "../assets/img/Javascript_Icon.svg";
-import MySQL from "../assets/img/mysql-logo.svg";
-import dot from "../assets/img/circle.svg";
-
-
-import colorSharp from "../assets/img/color-sharp.png"
+import meter1 from "../../assets/img/meter1.svg";
+import Kotlin from "../../assets/img/Kotlin_Icon.svg";
+import React from "../../assets/img/React-icon.svg";
+import CSharp from "../../assets/img/csharp_Icon.svg";
+import Java from "../../assets/img/Java_icon.svg";
+import Redux from "../../assets/img/redux.svg";
+import Three from "../../assets/img/Threejs-logo.svg"
+import Cpp from "../../assets/img/cplusplus.svg";
+import Vue from "../../assets/img/Vue_Icon.svg";
+import JavaScript from "../../assets/img/Javascript_Icon.svg";
+import MySQL from "../../assets/img/mysql-logo.svg";
+import dot from "../../assets/img/circle.svg";
+import "./Skills.scss";
+import colorSharp from "../../assets/img/color-sharp.png"
 
 export const Skills = () => {
 

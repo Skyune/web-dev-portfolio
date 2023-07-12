@@ -1,7 +1,6 @@
-import "./IconCutIn.scss";
+import "./SettingsIcon.scss";
 
 import React from "react";
-import SettingsContainer from "./SettingsContainer";
 
 const SettingsIcon = ({ top, rotate, onClick }) => {
   return (
