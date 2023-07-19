@@ -1,180 +1,105 @@
-import { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
-import 'animate.css';
-import { Navbar, Nav } from "react-bootstrap";
-
-import TrackVisibility from 'react-on-screen';
-import { AnimatedSvg } from "./AnimatedSvg";
-import background from "../assets/img/background.svg";
-import starsImage from "../assets/img/night.jpg";
-import downArrow from "../assets/img/down.svg";
-import layer1 from "../assets/img/layer1.svg";
-import layer2 from "../assets/img/layer2.svg";
-import layer3 from "../assets/img/layer3.svg";
-import layer4 from "../assets/img/layer4.svg";
-import layer5 from "../assets/img/layer5.svg";
-import layer6 from "../assets/img/layer6.svg";
-import layer7 from "../assets/img/layer7.svg";
-import dot from "../assets/img/circle.svg";
-import clouds1 from "../assets/img/clouds1.svg";
-import clouds2 from "../assets/img/clouds2.svg";
-import clouds3 from "../assets/img/clouds3.svg";
-import clouds4 from "../assets/img/clouds4.svg";
-import clouds5 from "../assets/img/clouds5.svg";
-import gradient from "../assets/img/layer10.png";
-import { NavBar2 } from "./NavBar2";
-
-
+import meter1 from "../../assets/img/meter1.svg";
+import Kotlin from "../../assets/img/Kotlin_Icon.svg";
+import React from "../../assets/img/React-icon.svg";
+import CSharp from "../../assets/img/csharp_Icon.svg";
+import Java from "../../assets/img/Java_icon.svg";
+import Redux from "../../assets/img/redux.svg";
+import Three from "../../assets/img/Threejs-logo.svg";
+import Cpp from "../../assets/img/cplusplus.svg";
+import Vue from "../../assets/img/Vue_Icon.svg";
+import JavaScript from "../../assets/img/Javascript_Icon.svg";
+import MySQL from "../../assets/img/mysql-logo.svg";
+import dot from "../../assets/img/circle.svg";
+import styles from "./Banner.module.scss";
+import colorSharp from "../../assets/img/color-sharp.png";
 
 export const Banner = () => {
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
-  const toRotate = [ "a Programmer!", "a Web Designer", "a tinkerer" ];
-  const period = 2000;
-
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-
-    return () => { clearInterval(ticker) };
-  }, [text])
-
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
-
-    setText(updatedText);
-
-    if (isDeleting) {
-      setDelta(prevDelta => prevDelta / 2);
-    }
-
-
-
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setIndex(prevIndex => prevIndex - 1);
-      setDelta(period);
-    } else if (isDeleting && updatedText === '') {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setIndex(1);
-      setDelta(500);
-    } else {
-      setIndex(prevIndex => prevIndex + 1);
-    }
-  }
-
-
   return (
-    
-    <section className="banner" id="home">
-      
-  <div class = "parallax-image">
+    <section className={styles.banner} id="banner">
+      <div className="container">
+        <div className="row">
+          <div className="col-12 mx-auto">
+            <div className="skill-bx wow zoomIn ">
+   
+              <a href="#home" className={styles.AppWrap_title}>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 1024 1024"
+                  class="AppWrap_iconT"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z"></path>
+                </svg>
+                Witaj
+              </a>
 
+              <p
+                className={styles.Header_intro}
+              >
+                Cześć! Nazywam się
+              </p>
 
-    <div class = "landscape">
-<img class="layer-7" data-type= "parallax" data-modifier="parallax" data-depth = "0.01" src={layer7}/>
-<img class="layer-6" data-type= "parallax" data-modifier="parallax" data-depth = "0.05" src={layer6}/>
-<img class="layer-4" data-type= "parallax" data-modifier="parallax" data-depth = "0.15" src={layer4}/>
-<img class="layer-5" data-type= "parallax" data-modifier="parallax" data-depth = "0.50" src={layer5}/>
-<img class="layer-3" data-type= "parallax" data-modifier="parallax" data-depth = "0.60" src={layer3}/>
-<img class="layer-2" data-type= "parallax" data-modifier="parallax" data-depth = "0.70" src={layer2}/>
-<img class="layer-1" data-type= "parallax" data-modifier="parallax" data-depth = "1" src={layer1}/>
-<img class="layer-1" data-type= "parallax" data-modifier="parallax" data-depth = "1" src={gradient} style={{zIndex: "1"}}/>
+              <h1
+                class={styles.Header_title}
+              >
+                Krystian <span class={styles.Header_titleSecondary}>Hołyszko</span>
+              </h1>
+              <h1
+                className={styles.Header_subtitle}
+              >
+                Junior Web Developer
+              </h1>
 
-
-  <img class="layer-12" data-type= "parallax" data-modifier="parallax" data-depth = "0.30" src={clouds5}/>
-  <img class="layer-11" data-type= "parallax" data-modifier="parallax" data-depth = "0.10" src={clouds4}/>
-  <img class="layer-10" data-type= "parallax" data-modifier="parallax" data-depth = "0.10" src={clouds3}/>
-  <img class="layer-9" data-type= "parallax" data-modifier="parallax" data-depth = "0.10" src={clouds2}/>
-
-</div>
-
-</div>
-
-
-
-<div class="background-svg"  data-type= "parallax" data-modifier="parallax" data-depth = "1">   
-< NavBar2/>
-
-
-      <div class = "content">
+              <div
+                className={styles.Header_description}
+              >
+                <p>
+                  Jestem junior web developerem z prawie rocznym doświadczeniem
+                  komercyjnym.
+                </p>
+                <p>
+                  Zapraszam Cię do dalszego poznania moich{" "}
+                  <a className={styles.Header_link} href="#work">
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M428.8 137.6h-86.177a115.52 115.52 0 0 0 2.176-22.4c0-47.914-35.072-83.2-92-83.2-45.314 0-57.002 48.537-75.707 78.784-7.735 12.413-16.994 23.317-25.851 33.253l-.131.146-.129.148C135.662 161.807 127.764 168 120.8 168h-2.679c-5.747-4.952-13.536-8-22.12-8H32c-17.673 0-32 12.894-32 28.8v230.4C0 435.106 14.327 448 32 448h64c8.584 0 16.373-3.048 22.12-8h2.679c28.688 0 67.137 40 127.2 40h21.299c62.542 0 98.8-38.658 99.94-91.145 12.482-17.813 18.491-40.785 15.985-62.791A93.148 93.148 0 0 0 393.152 304H428.8c45.435 0 83.2-37.584 83.2-83.2 0-45.099-38.101-83.2-83.2-83.2zm0 118.4h-91.026c12.837 14.669 14.415 42.825-4.95 61.05 11.227 19.646 1.687 45.624-12.925 53.625 6.524 39.128-10.076 61.325-50.6 61.325H248c-45.491 0-77.21-35.913-120-39.676V215.571c25.239-2.964 42.966-21.222 59.075-39.596 11.275-12.65 21.725-25.3 30.799-39.875C232.355 112.712 244.006 80 252.8 80c23.375 0 44 8.8 44 35.2 0 35.2-26.4 53.075-26.4 70.4h158.4c18.425 0 35.2 16.5 35.2 35.2 0 18.975-16.225 35.2-35.2 35.2zM88 384c0 13.255-10.745 24-24 24s-24-10.745-24-24 10.745-24 24-24 24 10.745 24 24z"></path>
+                    </svg>{" "}
+                    projektów
+                  </a>
+                  , aby uzyskać kompleksowy obraz moich{" "}
+                  <a className={styles.Header_link} href="#skills">
+                    {" "}
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M428.8 137.6h-86.177a115.52 115.52 0 0 0 2.176-22.4c0-47.914-35.072-83.2-92-83.2-45.314 0-57.002 48.537-75.707 78.784-7.735 12.413-16.994 23.317-25.851 33.253l-.131.146-.129.148C135.662 161.807 127.764 168 120.8 168h-2.679c-5.747-4.952-13.536-8-22.12-8H32c-17.673 0-32 12.894-32 28.8v230.4C0 435.106 14.327 448 32 448h64c8.584 0 16.373-3.048 22.12-8h2.679c28.688 0 67.137 40 127.2 40h21.299c62.542 0 98.8-38.658 99.94-91.145 12.482-17.813 18.491-40.785 15.985-62.791A93.148 93.148 0 0 0 393.152 304H428.8c45.435 0 83.2-37.584 83.2-83.2 0-45.099-38.101-83.2-83.2-83.2zm0 118.4h-91.026c12.837 14.669 14.415 42.825-4.95 61.05 11.227 19.646 1.687 45.624-12.925 53.625 6.524 39.128-10.076 61.325-50.6 61.325H248c-45.491 0-77.21-35.913-120-39.676V215.571c25.239-2.964 42.966-21.222 59.075-39.596 11.275-12.65 21.725-25.3 30.799-39.875C232.355 112.712 244.006 80 252.8 80c23.375 0 44 8.8 44 35.2 0 35.2-26.4 53.075-26.4 70.4h158.4c18.425 0 35.2 16.5 35.2 35.2 0 18.975-16.225 35.2-35.2 35.2zM88 384c0 13.255-10.745 24-24 24s-24-10.745-24-24 10.745-24 24-24 24 10.745 24 24z"></path>
+                    </svg>{" "}
+                    umiejętności
+                  </a>
+                  .
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <Container>
-
-      <Row className="align-items-start">
-          <Col xs={12} md={8} xl={9}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Chris!`} </h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
-              </div>}
-            </TrackVisibility>
-          </Col>
-          <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-
-
-                </div>}
-            </TrackVisibility>
-          </Col>
-          
-        </Row>
-        <Row style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}></Row>
-      </Container>
-      </div>
-
     </section>
-  )
-}
-
-(function() {
-  var topDistance = 0;
-  
-  function updateLayers() {
-    var depth, i, layer, layers, len, movement, translate3d;
-    
-    layers = document.querySelectorAll("[data-type='parallax']");
-    for (i = 0, len = layers.length; i < len; i++) {
-      layer = layers[i];
-      depth = layer.getAttribute('data-depth');
-      movement = -(topDistance * depth);
-      translate3d = 'translate3d(0, ' + movement + 'px, 0)';
-      layer.style['-webkit-transform'] = translate3d;
-      layer.style['-moz-transform'] = translate3d;
-      layer.style['-ms-transform'] = translate3d;
-      layer.style['-o-transform'] = translate3d;
-      layer.style.transform = translate3d;
-      layer.style.setProperty('--parallax-movement', movement + 'px');
-    }
-
-       // Set the margin-bottom of the .banner element to the parallax movement value
-    var banner = document.querySelector('.banner');
-    banner.style.marginBottom = layers[layers.length - 1].style.getPropertyValue('--parallax-movement');
-  }
-
-  // Call updateLayers on page load
-  window.onload = function() {
-    updateLayers();
-  }
-
-  // Call updateLayers on scroll
-  window.addEventListener('scroll', function(event) {
-    topDistance = this.pageYOffset;
-    updateLayers();
-  });
-})();
-
+  );
+};

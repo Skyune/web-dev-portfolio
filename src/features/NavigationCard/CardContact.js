@@ -56,8 +56,7 @@ export const CardContact = () => {
             </div>
           </div>
           <SettingsIcon rotate={true} onClick={() => setHidden(!hidden)} />
-      <SettingsContainer hidden={hidden} setHidden={setHidden} />
-          <LanguageButton top="75%"></LanguageButton>
+          <LanguageButton top="75%" hidden= {hidden}></LanguageButton>
           <VerticalNav />
 
           <div

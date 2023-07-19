@@ -1,0 +1,160 @@
+@media screen and (min-width: 500px) {
+  .MenuToggle_menuToggle {
+    right: 50px;
+    top: 45px;
+
+  }
+}
+
+.Header_container {
+  align-items: center;
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 0 0 30px;
+}
+.PageLinks_linksDesktop{
+  gap: 50px;
+  margin-bottom: 100px;
+  padding: 0 80px;
+}
+.PageLinks_links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  text-transform: capitalize;
+}
+.Menu_menuColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@media screen and (min-width: 768px){
+.Menu_container {
+    flex-direction: row;
+}
+}
+
+.BoxShadow_boxShadow, .Menu_container {
+    height: 100%;
+    pointer-events: auto;
+    position: fixed;
+    top: 0;
+}
+
+.MenuToggle_menuToggle span:nth-child(1),
+.MenuToggle_menuToggle span:nth-child(3) {
+  transform: rotate(0deg);
+}
+
+.MenuToggle_menuToggleActive span:nth-child(1) {
+  transform: rotate(45deg) translateY(-3px);
+  width: 2.8rem;
+  
+}
+
+.MenuToggle_menuToggleActive span:nth-child(3) {
+  transform: rotate(-45deg);
+  width: 2.8rem; /* added */
+}
+
+.MenuToggle_menuToggleActive span:nth-child(2) {
+  opacity: 0;
+}
+
+.MenuToggle_menuToggle {
+  align-items: center;
+  background: var(--color-primary);
+  border: 1px solid var(--font-third);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 4.2rem;
+  justify-content: center;
+  pointer-events: auto;
+  position: fixed; /* added */
+  right: var(45px);
+  top: var(--top-padding);
+
+  transition: all .2s ease-in-out;
+  width: 4.2rem;
+  z-index: 999;
+}
+
+
+.MenuToggle_menuToggle span:nth-last-child(2) { /* fixed typo */
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  width: 1.6rem;
+}
+
+.MenuToggle_menuToggle span {
+  background: var(--font-third);
+  display: flex;
+  height: 2px;
+
+  margin-bottom: 5px;
+  position: relative;
+  -webkit-transform-origin: 5px 0;
+  transform-origin: 5px 0;
+  transition: all .2s ease-in-out;
+  width: 2rem;
+}
+
+.MenuToggle_menuToggleActive span {
+  transition: all .2s ease-in-out;
+  translate: 2px;
+}
+
+.MenuToggle_menuToggle span:first-child {
+  margin-top: 3px;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.BoxShadow_boxShadow {
+  background: #727272;
+  left: 0;
+  width: 100%;
+  z-index: 200;
+  transition: opacity .2s ease-in-out;
+
+}
+
+.BoxShadow_boxShadowHidden {
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+  pointer-events: none;
+}
+
+
+.Menu_container {  //this is visible container
+  background: #1c1c1c;
+  color: var(--font-third);
+  z-index: 9;
+  display: flex;
+  padding-top: var(--spacing-xl);
+  z-index: 201;
+  transition:all 0.5s ease;
+}
+
+.Menu_containerHidden {
+  opacity: 0;
+  transition:all 0.5s ease;
+
+  pointer-events: none;
+  right: -100%;
+}
+
+.Menu_containerVisible {
+  right: 0;
+  transition:all 0.5s ease;
+}
+
+
+
