@@ -19,6 +19,8 @@
   margin-bottom: 100px;
   padding: 0 80px;
 }
+
+
 .PageLinks_links {
   display: flex;
   flex-direction: column;
@@ -109,6 +111,117 @@
 .MenuToggle_menuToggleActive span {
   transition: all .2s ease-in-out;
   translate: 2px;
+}
+
+.PageLinks_linkActive a {
+  color: var(--font-secondary);
+}
+.PageLinks_linksDesktop a {
+  font-size: 4rem;
+  padding: 20px 15px;
+}
+
+.PageLinks_linkActive a {
+  color: var(--font-secondary);
+}
+.PageLinks_linksDesktop a {
+  font-size: 4rem;
+  padding: 20px 15px;
+}
+
+.Header_titleContainer {
+  align-items: center;
+  color: var(--font-secondary);
+  display: flex;
+  flex: 2 1;
+  justify-content: center;
+
+}
+
+
+.Header_linkLine {
+  flex: 1 1;
+  position: relative;
+}
+
+.spans {
+  position: relative;
+  flex: 1 1;
+}
+
+.Header_container * {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+
+
+}
+
+
+
+
+
+.Header_linkLine:before {
+  background: var(--font-third);
+  content: "";
+  height: 100%;
+  left: 9px;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+
+
+.Header_linkLine:after {
+  background: var(--font-secondary);
+  bottom: 0;
+  content: "";
+  height: 0;
+  left: 9px;
+  position: absolute;
+  transition: height .4s ease-in-out;
+  width: 1px;
+}
+
+.Header_titleContainer {
+    align-items: center;
+    color: var(--font-secondary);
+    display: flex;
+    flex: 2 1;
+    justify-content: center;
+}
+.Header_container * {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+/* Define the styles for the container */
+.PageLinks_linkContainer {
+  display: flex;
+  align-items: center; /* Vertically align items in the container */
+}
+
+/* Style the icon */
+.PageLinks_linkIcon {
+  margin-right: 8px; /* Add some space between the icon and the text */
+}
+
+
+.PageLinks_links a {
+  color: var(--font-third);
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 300;
+  height: 100%;
+  min-width: 250px;
+  padding: 15px 40px;
+  text-decoration: none;
+  transition: color .2s ease-in-out;
+  width: 100%;
 }
 
 .MenuToggle_menuToggle span:first-child {

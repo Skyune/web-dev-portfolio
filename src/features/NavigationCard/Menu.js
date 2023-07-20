@@ -22,12 +22,7 @@ export const SideMenu = () => {
             <nav className={`${styles.Menu_container} ${isOpen ? styles.Menu_containerHidden : styles.Menu_containerVisible}`}>
         <div class={styles.Header_container}>
           <div class={styles.Header_titleContainer}>
-            <div
-              class={styles.Header_title}
-             
-            >
-              menu
-            </div>
+ 
           </div>
           <div class={styles.Header_linkContainer}>
             <div
@@ -39,28 +34,9 @@ export const SideMenu = () => {
               href="mailto:krystianh595@gmail.com"
               style={{ opacity: 1 }}
             >
-              <span>k</span>
-              <span>r</span>
-              <span>y</span>
-              <span>s</span>
-              <span>t</span>
-              <span>i</span>
-              <span>a</span>
-              <span>n</span>
-              <span>h</span>
-              <span>5</span>
-              <span>9</span>
-              <span>5</span>
-              <span>@</span>
-              <span>g</span>
-              <span>m</span>
-              <span>a</span>
-              <span>i</span>
-              <span>l</span>
-              <span>.</span>
-              <span>c</span>
-              <span>o</span>
-              <span>m</span>
+
+            
+              <div class="Header_linkLine"></div>
             </a>
           </div>
         </div>

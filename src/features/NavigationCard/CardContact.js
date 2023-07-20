@@ -65,7 +65,7 @@ export const CardContact = () => {
           >
             <a
               className="Contact_socialIcon"
-              href="https://bit.ly/3P6vzpt"
+              href=""
               target="_blank"
               rel="noreferrer"
             >
@@ -89,7 +89,7 @@ export const CardContact = () => {
             </a>
             <a
               className="Contact_socialIcon"
-              href="https://bit.ly/3FpbAxS"
+              href=""
               target="_blank"
               rel="noreferrer"
             >
@@ -110,7 +110,7 @@ export const CardContact = () => {
             </a>
             <a
               className="Contact_socialIcon"
-              href="https://bit.ly/3wd0F6n"
+              href=""
               target="_blank"
               rel="noreferrer"
             >
@@ -155,7 +155,7 @@ export const CardContact = () => {
               className="Contact_footer"
               style={{ opacity: 1, transform: "none" }}
             >
-              © 2023 Michał Stępień
+              © 2023 Krystian Hołyszko
             </div>
           </div>
         </div>
